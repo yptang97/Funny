@@ -4,6 +4,12 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/typ/Funny/app/src/main/res/layout/activity_main.xml" value="0.3494791666666667" />
+        <entry key="..\:/typ/Funny/app/src/main/res/layout/fans_fragment.xml" value="0.21927083333333333" />
+        <entry key="..\:/typ/Funny/app/src/main/res/layout/home_fragment.xml" value="0.33796296296296297" />
+        <entry key="..\:/typ/Funny/app/src/main/res/layout/home_post_fragment.xml" value="0.3494791666666667" />
+        <entry key="..\:/typ/Funny/app/src/main/res/layout/main_activity.xml" value="0.3494791666666667" />
+        <entry key="..\:/typ/Funny/app/src/main/res/layout/message_fragment.xml" value="0.33796296296296297" />
+        <entry key="..\:/typ/Funny/app/src/main/res/layout/post_fragment.xml" value="0.3494791666666667" />
       </map>
     </option>
   </component>

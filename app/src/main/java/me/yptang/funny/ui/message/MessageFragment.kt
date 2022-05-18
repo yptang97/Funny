@@ -1,10 +1,10 @@
 package me.yptang.funny.ui.message
 
-import com.drake.engine.base.EngineFragment
 import me.yptang.funny.R
 import me.yptang.funny.databinding.MessageFragmentBinding
+import me.yptang.funny.ui.EngineLazyFragment
 
-class MessageFragment : EngineFragment<MessageFragmentBinding>(R.layout.message_fragment) {
+class MessageFragment : EngineLazyFragment<MessageFragmentBinding>(R.layout.message_fragment) {
     override fun initData() {
 
     }
@@ -12,4 +12,6 @@ class MessageFragment : EngineFragment<MessageFragmentBinding>(R.layout.message_
     override fun initView() {
 
     }
+
+
 }

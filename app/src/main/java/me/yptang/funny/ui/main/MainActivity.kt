@@ -17,6 +17,8 @@ class MainActivity : EngineActivity<MainActivityBinding>(R.layout.main_activity)
         immersive(darkMode = true)
         val pages = listOf(HomeFragment(), VideoFragment(), MessageFragment(), PersonFragment())
         binding.viewPager.adapter = FragmentPagerAdapter(pages)
+        //首页tab不销毁
+        binding.viewPager.offscreenPageLimit = 3
         binding.viewPager.addOnPageChangeListener(object : ViewPager.SimpleOnPageChangeListener() {
             override fun onPageSelected(position: Int) {
                 binding.navView.menu.getItem(position).isChecked = true

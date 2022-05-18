@@ -1,4 +1,4 @@
-package me.yptang.funny.net.entity
+package me.yptang.funny.net.interceptor
 
 import android.os.Build
 import com.drake.net.interceptor.RequestInterceptor

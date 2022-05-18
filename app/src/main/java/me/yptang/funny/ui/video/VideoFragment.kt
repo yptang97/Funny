@@ -1,10 +1,10 @@
 package me.yptang.funny.ui.video
 
-import com.drake.engine.base.EngineFragment
 import me.yptang.funny.R
 import me.yptang.funny.databinding.VideoFragmentBinding
+import me.yptang.funny.ui.EngineLazyFragment
 
-class VideoFragment : EngineFragment<VideoFragmentBinding>(R.layout.video_fragment) {
+class VideoFragment : EngineLazyFragment<VideoFragmentBinding>(R.layout.video_fragment) {
     override fun initData() {
 
     }
@@ -12,4 +12,5 @@ class VideoFragment : EngineFragment<VideoFragmentBinding>(R.layout.video_fragme
     override fun initView() {
 
     }
+
 }

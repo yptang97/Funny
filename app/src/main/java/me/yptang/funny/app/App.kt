@@ -1,6 +1,7 @@
 package me.yptang.funny.app
 
 import android.app.Application
+import com.drake.engine.base.Engine
 import me.yptang.funny.app.initializer.KVInitializer
 import me.yptang.funny.app.initializer.NetInitializer
 
@@ -15,11 +16,14 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
 
+        // 全局持有app 供需使用
+        Engine.initialize(this)
+
         initializer.apply {
             add(NetInitializer)
             add(KVInitializer)
 
-            forEach { it.init(this@App) }
+            forEach { it.init() }
         }
     }
 
