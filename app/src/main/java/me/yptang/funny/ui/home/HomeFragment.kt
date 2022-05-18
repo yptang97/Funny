@@ -1,42 +1,16 @@
 package me.yptang.funny.ui.home
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import android.widget.TextView
-import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import me.yptang.funny.databinding.FragmentHomeBinding
+import com.drake.engine.base.EngineFragment
+import me.yptang.funny.R
+import me.yptang.funny.databinding.HomeFragmentBinding
 
-class HomeFragment : Fragment() {
+class HomeFragment : EngineFragment<HomeFragmentBinding>(R.layout.home_fragment) {
 
-    private var _binding: FragmentHomeBinding? = null
+    override fun initData() {
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
-
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View {
-        val homeViewModel =
-            ViewModelProvider(this).get(HomeViewModel::class.java)
-
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textHome
-        homeViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
-        }
-        return root
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    override fun initView() {
+
     }
 }
